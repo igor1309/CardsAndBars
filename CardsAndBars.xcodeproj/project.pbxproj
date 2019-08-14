@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2A235DFE2303E46200DF1CAD /* CardsAndBars.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A235DFC2303E46200DF1CAD /* CardsAndBars.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A235E072303E48E00DF1CAD /* HorizontalBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A235E042303E48E00DF1CAD /* HorizontalBar.swift */; };
+		2A235E082303E48E00DF1CAD /* HorizontalBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A235E052303E48E00DF1CAD /* HorizontalBars.swift */; };
+		2A235E092303E48E00DF1CAD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A235E062303E48E00DF1CAD /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A235DF92303E46200DF1CAD /* CardsAndBars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardsAndBars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A235DFC2303E46200DF1CAD /* CardsAndBars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardsAndBars.h; sourceTree = "<group>"; };
 		2A235DFD2303E46200DF1CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A235E042303E48E00DF1CAD /* HorizontalBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalBar.swift; sourceTree = "<group>"; };
+		2A235E052303E48E00DF1CAD /* HorizontalBars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalBars.swift; sourceTree = "<group>"; };
+		2A235E062303E48E00DF1CAD /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 		2A235DFB2303E46200DF1CAD /* CardsAndBars */ = {
 			isa = PBXGroup;
 			children = (
+				2A235E062303E48E00DF1CAD /* Card.swift */,
+				2A235E042303E48E00DF1CAD /* HorizontalBar.swift */,
+				2A235E052303E48E00DF1CAD /* HorizontalBars.swift */,
 				2A235DFC2303E46200DF1CAD /* CardsAndBars.h */,
 				2A235DFD2303E46200DF1CAD /* Info.plist */,
 			);
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					2A235DF82303E46200DF1CAD = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -131,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A235E072303E48E00DF1CAD /* HorizontalBar.swift in Sources */,
+				2A235E092303E48E00DF1CAD /* Card.swift in Sources */,
+				2A235E082303E48E00DF1CAD /* HorizontalBars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		2A235E022303E46200DF1CAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VRVJ9YNRQU;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.photoigor.CardsAndBars;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		2A235E032303E46200DF1CAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VRVJ9YNRQU;
